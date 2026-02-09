@@ -2,7 +2,7 @@
 let selectedQuestions = [];
 let currentQuestionIndex = 0;
 let userAnswers = {};
-let timeRemaining = 60 * 60; // 60分钟 = 3600秒
+let timeRemaining = 600 * 60; // 60分钟 = 3600秒
 let timerInterval = null;
 let isTestStarted = false;
 let isTestFinished = false;
@@ -1836,12 +1836,12 @@ function startTest() {
     
     // 随机选择80题
     const shuffled = [...allQuestions].sort(() => Math.random() - 0.5);
-    selectedQuestions = shuffled.slice(0, 100);
+    selectedQuestions = shuffled.slice(0, 263);
     
     // 初始化答案
     userAnswers = {};
     currentQuestionIndex = 0;
-    timeRemaining = 120 * 60;
+    timeRemaining = 1200 * 60;
     isTestStarted = true;
     isTestFinished = false;
     

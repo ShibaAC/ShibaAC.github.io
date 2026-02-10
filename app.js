@@ -1836,7 +1836,7 @@ function startTest() {
     
     // 随机选择80题
     const shuffled = [...allQuestions].sort(() => Math.random() - 0.5);
-    selectedQuestions = shuffled.slice(0, 263);
+    selectedQuestions = shuffled.slice(0, 100);
     
     // 初始化答案
     userAnswers = {};
